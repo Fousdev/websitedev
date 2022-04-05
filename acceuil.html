@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traducteur Franco-Lokpa</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="téléchargement.jpeg">
+    <link rel="stylesheet" href="acceuil_greatsrean.css">
+    <link rel="stylesheet" media="screen and (max-width: 980px)" href="page.acceuil.css">
+    <link rel="stylesheet" href="informatique.css">
+</head>
+
+<body>
+    <style>
+        marquee {
+            font-size: 30px;
+            width: 70%;
+        }
+
+        .info,
+        marquee {
+            display: inline-block;
+        }
+
+        .info {
+            padding: 12px;
+            background-color: chocolate;
+            color: white;
+            font-weight: 900;
+            font-size: 150%;
+            width: 29%;
+        }
+
+        @media screen and (max-width:1280px) {
+            .info {
+                padding: 12px;
+                background-color: chocolate;
+                color: white;
+                font-weight: 900;
+                font-size: 120%;
+                width: 29%;
+            }
+        }
+
+        .video {
+            width: 100%;
+            margin-top: 1%;
+            height: 40%;
+            padding: 0px 13px;
+        }
+
+        .lien_video {
+            background-color: orangered;
+            padding: 10px 13px;
+            width: 50%;
+            margin: 4%;
+            border-bottom-left-radius: 64px;
+            text-align: center;
+        }
+
+        .lien_video a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+
+    <div class="description" id="description">
+        <div class="entete">
+            <div class="menu" id="menu" onclick="changer(this)">
+                <div class="tiret1"></div>
+                <div class="tiret2"></div>
+                <div class="tiret3"></div>
+            </div>
+            <div class="span" id="span"> <span>Digital Studing</span></div>
+            <div class="text-dark" style="font-size:20px ;" id="btn_search" onclick="creer()"><i
+                    class="fa fa-search"></i></div>
+
+        </div><br><br><br>
+        <div class="menu-h">
+            <ul class="liste-h">
+                <li id="acceuil-menu">
+                    <a href="#">
+                        <span>Acceuil </span>
+                    </a>
+                </li>
+                <li id="formation-menu"><a href="informatique.html"><span>
+                            Formations</span></a>
+                    <!----- <a style="font-size: 20px;" onclick="maFonction(this)"><i class="fa fa-angle-down"></i></a>--->
+                </li>
+                <li id="connexion-menu"><a href="connexion.html"><span>Se
+                            Connecter</span></a></li>
+            </ul>
+        </div>
+        <marquee behavior="" direction="">Bienvenu sur notre page de cour en ligne.</marquee>
+        <div class="info">LES NOUVELLES</div>
+        <script>
+            var info = document.querySelector("marquee")
+
+            setTimeout(() => {
+                info.innerText = " Pour avoir accès regulièrement à  nos cours veillez-vous connecter"
+            }, 5000);
+            setTimeout(() => {
+                info.innerText = "Bonne journée à vous !"
+            }, 8000);
+
+
+        </script>
+        <div id="interne">
+
+            <div class="slogan">La clé de votre<br></div>
+            <div class="slogan" id="former"> réussite se trouve ici</div>
+            <br><br>
+            <div class="proposition">
+                S'informer pour bien se former.<br>
+                Apprenez à apprendre.<br>
+                Acquérir et booster vos compétences.<br>
+            </div><br><br>
+            <div class="plus"><a href="">EN SAVOIR PLUS</a></div>
+
+        </div>
+
+        <div id="guide">
+
+            <div class="lien" id="matho" style="opacity: 0;transition: 4s;">
+                <img src="maths-teacher-tutor-professor-blackboard-remote-learning-concept-friendly-personal-coach-front-blackbboard-200161606.jpg"
+                    alt="" style="height: 170px;"><br>
+                <h2>mathématiques</h2>
+                Decouvrir ici les secrèts des mathématique <br>
+                <a href="">Lire tout</a>
+            </div>
+            <script>
+
+                setTimeout(() => {
+                    document.getElementById("matho").style.opacity = "1"
+                }, 1000);
+                setTimeout(() => {
+                    document.getElementById("formation_infor").style.opacity = "1"
+                }, 4000);
+                setTimeout(() => {
+                    document.getElementById("entreprenariat").style.opacity = "1"
+                }, 6000);
+                setTimeout(() => {
+                    document.getElementById("entreprenariat_digital").style.opacity = "1"
+                }, 8000);
+
+            </script>
+            <div class="lien" id="formation_infor" style="opacity:0;transition: 4s;">
+                <img src="bureautique-ordinateur-formation-evolve.jpg" alt=""><br>
+                <h2>informatique</h2>
+                Les cours d'informatiques 100% pratique <br>
+                <a href="">Lire tout</a>
+            </div>
+            <div class="lien" id="entreprenariat" style="opacity:0;transition: 4s;">
+                <img src="images (1).jpeg" alt="" style="height: 170px;"><br>
+                <h2>entreprenariat</h2>
+                Devenir un grand entrepreneur grâce aux idés des autres <br>
+                <a href="">Lire tout</a>
+            </div>
+            <div class="lien" id="entreprenariat_digital" style="opacity:0;transition: 4s;">
+                <img src="e17c555daad890f51267bf92ae0dd888.jpg" alt="" style="height: 170px;"><br>
+                <h2>entreprenariat</h2>
+                Devenir un grand entrepreneur grâce aux idés des autres <br>
+                <a href="">Lire tout</a>
+            </div>
+
+        </div><br>
+
+        <div class="video">
+            <h3>Vous pouvez suivre nos formations en vidéo</h3>
+            <div class="lien_video"><a href="">Suivez en direct sur Youtube</a></div>
+        </div>
+        <br><br>
+        <div class="footer" id="footer">
+
+
+            <div class="info_dam">
+
+                <div class="condition">
+                    <ul>
+                        <div class="option">
+                            <li><a href="" class="opt">conditions d'utilisations</a> </li>
+                            <li><a href="" class="opt">A propos du site</a> <a style="font-size: 20px;margin-left: 61%;"
+                                    onclick="maFonction(this)" class="mybtn"><i class="fa fa-angle-down"></i></a></li>
+                            <li><a href="" class="opt">Politique de confidentialité</a></li>
+                        </div>
+                        <div class="option">
+                            <li><a href="" class="opt">contactez nous</a> <a style="font-size: 20px;margin-left: 62%;"
+                                    onclick="maFonction(this)" class="mybtn"><i class="fa fa-angle-down"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="langage"></div>
+        <div class="sociaux">
+            <a href="#" style="font-size:30px ;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="font-size:30px ;"><i class="fab fa-youtube"></i></a>
+            <a href="#" style="font-size:30px ;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="font-size:30px ;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="font-size:30px ;"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="support"></div>
+    </div>
+
+
+
+    <div class="contenu" id="contenu">
+
+        <ul id="ul"><br><br>
+            <li class="liste1"><a href="#">
+                    <span>Acceuil </span><br><br>
+                </a>
+            </li>
+            <li class="liste1" style="border-bottom: 0px solid black;margin-top: 0%;"> <a class=" dropdown-toggle"
+                    data-toggle="dropdown" onclick="maFonction(this)">Formations</a>
+
+
+            </li>
+            <div id="ul_caché">
+                <li class="former"><a href="mathématique.html">Cours des mathématiques</a></li>
+                <li class="former"><a href="informatique.html">Formation en informatique</a></li>
+                <li class="former"><a href="">Formation en entreprenariat</a></li>
+            </div>
+
+            <li class="liste1 "> <a href=""><span></span></a></li>
+            <li class="liste1"><a href="connexion.html"><span>Se
+                        Connecter</span></a></li>
+            <li class="liste1"><a href=""><span>Quitter</span></a></li>
+            <br><br><br>
+        </ul>
+    </div>
+
+    <script src="page_acceuil.js"> </script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="code_traduc.js"></script>
+    <div id="recuperer" style="font-size: 0px;opacity: 0;"></div>
+</body>
+
+</html>
